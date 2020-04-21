@@ -1,4 +1,4 @@
-#include <cs50.h>
+// #include <cs50.h>
 #include <stdio.h>
 
 int get_positive_int(void);
@@ -29,7 +29,9 @@ int get_positive_int(void)
     int n;
     do
     {
-        n = get_int("Height: ");
+        // n = get_int("Height: ");
+        printf("Height?: ");
+        scanf("%d", &n);
     }
     while (n < 1 || n > 8);
     return n;
